@@ -1,0 +1,29 @@
+<div class="container">
+  <ol class="breadcrumb">
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Score Designs', designs_path %></li>
+    <li class="active">Design</li>
+  </ol>
+
+<div class="alert alert-success" role="alert"><p id="notice"><%= notice %></p></div>
+
+<%= image_tag @design.image.url(:medium) %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @design.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @design.category %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @design.description %>
+</p>
+
+<%= link_to 'Edit', edit_design_path(@design) %>
+
+</div>
