@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link type='text/css' rel='stylesheet' href='https://vjs.zencdn.net/4.5.1/video-js.css' />
-  <script src="videojs.playlist.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Saint Louis Thread Company | Quality Dry Goods Since 2014</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Saint Louis Thread Company | Quality Dry Goods Since 2014</title>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   <%= csrf_meta_tags %>
+   <link type='text/css' rel='stylesheet' href='https://vjs.zencdn.net/4.5.1/video-js.css' />
+   <script src="videojs.playlist.js"></script>
 </head>
+
 <body>
-
-   <%= render 'layouts/header' =%>
-
-
-     <%= yield %>
-
-     <div class="container">
-     <%= render 'layouts/footer' =%>
-     </div>
-
+  <%= render 'layouts/header' =%>
+  <%= yield %>
+  <div class="container">
+    <%= render 'layouts/footer' =%>
+  </div>
 </body>
 </html>

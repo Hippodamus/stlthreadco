@@ -4,12 +4,12 @@
       <h2><%= pluralize(@design.errors.count, "error") %> prohibited this design from being saved:</h2>
 
       <ul>
-      <% @design.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% @design.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     </div>
-  <% end %>
+ <% end %>
 
 <div class="col-xs-8">
   <div class="form-group">

@@ -5,25 +5,25 @@
     <li class="active">Design</li>
   </ol>
 
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<%= image_tag @design.image.url(:medium) %>
+  <%= image_tag @design.image.url(:medium) %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @design.name %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @design.name %>
+  </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @design.category %>
-</p>
+  <p>
+    <strong>Category:</strong>
+    <%= @design.category %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @design.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @design.description %>
+  </p>
 
-<%= link_to 'Edit', edit_design_path(@design) %>
+  <%= link_to 'Edit', edit_design_path(@design) %>
 
 </div>

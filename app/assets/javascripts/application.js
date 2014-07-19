@@ -10,10 +10,10 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jwplayer.shuffle
-//= require jwplayer.shuffle.min
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require jwplayer.shuffle
+//= require jwplayer.shuffle.min
 //= require_tree .
