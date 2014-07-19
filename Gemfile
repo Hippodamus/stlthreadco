@@ -8,7 +8,7 @@ group :assets do
   gem 'sass-rails',   '~> 4.0.3'
   gem 'coffee-rails', '~> 4.0.0'
   gem 'uglifier'
-  gem 'bootstrap-sass'
+  gem 'bootstrap-sass', '~> 3.1.0.2'
 end
 
 gem 'jquery-rails', '>= 1.0.12'
