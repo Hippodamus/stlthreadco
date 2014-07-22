@@ -437,3 +437,66 @@ footer .footer-below {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+
+
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
+color: #001860;
+background-color: transparent;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #A8CDFB;
+background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: #001860;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #A8CDFB;
+background-color: transparent;
+}
+
+body {
+color: #777777;
+}
+
+section h2 {
+color: #001860;
+margin: 0;
+font-size: 3em;
+}
+
+hr.star-primary:after {
+color: #001860;
+background-color: transparent;
+}
+
+.btn-success, .btn-success:focus, .btn-success:active, .btn-success.active {
+color: #ffffff;
+background-color: #001860;
+border-color: #001860;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+color: #ffffff;
+background-color: #A8CDFB;
+border-color: #A8CDFB; 
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+background-color: #f7f7f7;
+color: #A8CDF8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+text-transform: uppercase;
+font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 700;
+font-color: #001860;
+font-color: #001860;
+}
+
