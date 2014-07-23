@@ -19,18 +19,6 @@ a.active {
     color: #A8CDFB;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    font-color: #001860
-}
-
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -438,9 +426,6 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-
-
-
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
 color: #001860;
 background-color: transparent;
@@ -460,7 +445,7 @@ color: #A8CDFB;
 background-color: transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
 text-transform: uppercase;
 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 font-weight: 700;
