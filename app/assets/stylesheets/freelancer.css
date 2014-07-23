@@ -460,7 +460,21 @@ color: #A8CDFB;
 background-color: transparent;
 }
 
-body {
+h1, h2, h3, h4, h5, h6 {
+text-transform: uppercase;
+font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 700;
+color: #001860;
+}
+
+h4, h5, h6 {
+text-transform: uppercase;
+font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 700;
+color: #A8CDFB;
+}
+
+p {
 color: #777777;
 }
 
@@ -490,14 +504,6 @@ border-color: #A8CDFB;
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
 background-color: #f7f7f7;
 color: #A8CDF8;
-}
-
-h1, h2, h3, h4, h5, h6 {
-text-transform: uppercase;
-font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-font-weight: 700;
-font-color: #001860;
-font-color: #001860;
 }
 
 .dropdown-menu>li>a {
