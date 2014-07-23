@@ -1,27 +1,38 @@
-<br><br><br><br><br><br><br>
+<div id="bodymargin">
 <div class="container"> 
 <h2>Change your password</h2>
+<% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+      <div class="alert alert-<%= name == :notice ? "success" : "danger" %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      </div>
+    <% end %>
+    <% end %>
 
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
   <%= f.hidden_field :reset_password_token %>
 
+<div class="row">
 <div class="col-xs-8">  
   <div class="form-group">
-  	<%= f.label :password, "New password" %><br>
+    <%= f.label :password, "New password" %><br>
     <%= f.password_field :password, :autofocus => true, class: "form-control" %>
   </div>
 
   <div class="form-group">
-  	<%= f.label :password_confirmation, "Confirm new password" %>
+    <%= f.label :password_confirmation, "Confirm new password" %>
     <%= f.password_field :password_confirmation, class: "form-control" %>
   </div>
 
   <div class="form-group">
-  	<%= f.submit "Change my password", class: "btn btn-primary" %>
+    <%= f.submit "Change my password", class: "btn btn-primary" %>
   </div>
 </div>  
+</div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
 </div>

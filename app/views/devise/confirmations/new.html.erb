@@ -1,10 +1,19 @@
-<br><br><br><br><br><br><br>
+<div id="bodymargin">
 <div class="container"> 
 <h2>Resend confirmation instructions</h2>
+<% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+      <div class="alert alert-<%= name == :notice ? "success" : "danger" %> alert-dismissable">
+      	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      	<%= content_tag :div, msg, :id => "flash_#{name}" %>
+      </div>
+    <% end %>
+    <% end %>
 
 <%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
   <%= devise_error_messages! %>
 
+<div class="row">
 <div class="col-xs-8">
   <div class="form-group">
     <%= f.label :email %><br>
@@ -14,7 +23,9 @@
     <%= f.submit "Resend confirmation instructions", class: "btn btn-primary" %>
   </div>
 </div>
+</div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
 </div>

@@ -1,9 +1,13 @@
+#bodymargin {
+    margin-top: 200px;
+}
+
 #bigvid {
 position: absolute;
 background-color: #a8cdfb;
-background: url('../images/videoimage.png') no-repeat;
+background-image: url('images/videoimage.png') no-repeat;
 width: 100%;
-height: 788px !important;
+height: 100%!important;
 z-index: 1;
 }
 
@@ -549,4 +553,11 @@ font-size: 14px;
 line-height: 1.428571429;
 color: #777777;
 background-color: white;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+border: solid 2px #fff;
+color: #001860;
+font-weight: bold;
+background: #fff;
 }

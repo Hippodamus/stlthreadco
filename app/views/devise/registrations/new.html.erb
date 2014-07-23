@@ -1,6 +1,14 @@
-<br><br><br><br><br><br><br>
+<div id="bodymargin">
 <div class="container"> 
 <h2>Sign up</h2>
+<% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+      <div class="alert alert-<%= name == :notice ? "success" : "danger" %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      </div>
+    <% end %>
+    <% end %>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -13,21 +21,22 @@
   </div>
 
   <div class="form-group">
-  	<%= f.label :password %><br>
+    <%= f.label :password %><br>
     <%= f.password_field :password, class: "form-control" %>
   </div>
 
   <div class="form-group">
-  	<%= f.label :password_confirmation %><br>
+    <%= f.label :password_confirmation %><br>
     <%= f.password_field :password_confirmation, class: "form-control" %>
   </div>
 
   <div class="form-group">
-  	<%= f.submit "Sign up", class: "btn btn-primary" %>
+    <%= f.submit "Sign up", class: "btn btn-primary" %>
   </div>
 </div>
 </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
 </div>
