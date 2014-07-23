@@ -1,8 +1,9 @@
 #bigvid {
 position: absolute;
-background-color: #000;
+background-color: #a8cdfb;
+background: url('../images/videoimage.png') no-repeat;
 width: 100%;
-height: 100% !important;
+height: 788px !important;
 z-index: 1;
 }
 
