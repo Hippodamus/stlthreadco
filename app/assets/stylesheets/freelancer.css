@@ -3,7 +3,7 @@
 }
 
 #bigvid {
-position: absolute;
+position: relative;
 background-color: #a8cdfb;
 background-image: url('images/videoimage.png') no-repeat;
 width: 100%;

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "new" => "designs#new"
   get "show" => "designs#show"
 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
