@@ -8,22 +8,18 @@
 
   <p id="notice"><%= notice %></p>
 
-  <%= image_tag @design.image.url(:medium) %>
-
-  <p>
-    <strong>Name:</strong>
-    <%= @design.name %>
-  </p>
-
-  <p>
-    <strong>Category:</strong>
-    <%= @design.category %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= @design.description %>
-  </p>
+  <div class="row">
+  <div class="col-md-6">
+    <div class="thumbnail">
+     <%= image_tag @design.image.url(:medium) %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h2><%= @design.name %></h2>
+    <h4><%= @design.category %></h4>
+    <p><%= @design.description %></p>
+  </div>
+  </div>
 
   <%= link_to 'Edit', edit_design_path(@design) %>
 

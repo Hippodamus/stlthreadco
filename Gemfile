@@ -34,6 +34,9 @@ gem 'rake', '~> 10.3.2'
 
 gem "paperclip", "~> 4.1"
 
+gem "paperclip-dropbox", ">= 1.1.7"
+
+gem "figaro"
 
 group :development, :test do
 	gem 'sqlite3'
