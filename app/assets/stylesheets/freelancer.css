@@ -279,7 +279,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #A8CDFB;
+    color: #001860;
     background: #fff;
 }
 
@@ -553,11 +553,4 @@ font-size: 14px;
 line-height: 1.428571429;
 color: #777777;
 background-color: white;
-}
-
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
-border: solid 2px #fff;
-color: #001860;
-font-weight: bold;
-background: #fff;
 }
