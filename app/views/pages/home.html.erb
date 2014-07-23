@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+    <link type='text/css' rel='stylesheet' href='https://vjs.zencdn.net/4.5.1/video-js.css' />
+    <script src="videojs.playlist.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
@@ -28,23 +29,60 @@
 
 <body id="page-top" class="index">
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <br><br><br><br>
-                    <img class="img-responsive" src="images/profile.png" alt="">
-                    <div class="intro-text">
-                        <br><br>
-                        <span class="skills">Durable Dry Goods Inspired by Saint Louis Since 2014</span>
-                    </div>
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-submit"></i> SHOP NOW
-                    </a>
-                </div>
-            </div>
+
+
+<div id="big id">
+       
+
+
+        <script src="http://p.jwpcdn.com/6/8/jwplayer.js"></script>
+        <div id='playerCgNWYPJeRjxA'></div>
+        <script type='text/javascript'>
+            jwplayer('playerCgNWYPJeRjxA').setup({
+            plugins: {
+            'javascripts/jwplayer.shuffle.min.js': {
+            autostart: true,
+            repeatplaylist: true,
+            shuffle: true
+            }
+            },
+        
+        width: '100%',
+        aspectratio: '16:9',
+        controls: 'false',
+        dock: 'false',
+        playlist: [{
+    
+        file: 'https://www.youtube.com/watch?v=aCYegJfo22c',
+        image: '../video/images/fitness-video2-big.jpg',
+        title: 'Al Hrabosky'
+        },{  
+
+        file: 'hhttps://www.youtube.com/watch?v=mm6CBbwuDxc',
+        image: '../video/images/fitness-video3-big.jpg',
+        title: 'Simba'
+        }]
+        
+        });
+        </script>
+
+<div id="overlay">
+
+      <img class="img-responsive" src="images/profile.png" alt="">
+        <div class="intro-text">
+            <br><br>
+            <span class="skills"><h3>Durable Dry Goods Inspired by Saint Louis Since 2014</h3></span>
         </div>
-    </header>
+            <a href="#" class="btn btn-lg btn-outline">
+                <i class="fa fa-submit"></i> SHOP NOW
+            </a>
+
+
+</div>
+</div> 
+    
+
+
 
     <section id="about">
         <div class="container">

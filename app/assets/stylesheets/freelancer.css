@@ -1,13 +1,36 @@
+#bigvid {
+position: absolute;
+background-color: #000;
+width: 100%;
+}
+
+#overlay {
+position: absolute;
+width: 400px;
+height: 400px;
+z-index: 1;
+background-color: transparent;
+border-radius: 400px;
+top: 30%;
+left: 50%;
+margin-left: -200px;
+text-align: center;
+}
+
+
+
 body {
     overflow-x: hidden;
 }
 
 p {
     font-size: 20px;
+    color: #777777;
 }
 
 p.small {
     font-size: 16px;
+    color: #777777;
 }
 
 a,
@@ -453,15 +476,18 @@ font-weight: 700;
 color: #001860;
 }
 
+h3 {
+text-transform: uppercase;
+font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 700;
+color: #ffffff;
+}
+
 h4, h5, h6 {
 text-transform: uppercase;
 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 font-weight: 700;
 color: #A8CDFB;
-}
-
-p {
-color: #777777;
 }
 
 section h2 {
