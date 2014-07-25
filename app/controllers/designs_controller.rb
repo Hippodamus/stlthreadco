@@ -15,6 +15,7 @@ class DesignsController < ApplicationController
   # GET /designs/new
   def new
     @design = Design.new
+    @categories = Category.all
   end
 
   # GET /designs/1/edit
@@ -69,6 +70,10 @@ class DesignsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def design_params
-      params.require(:design).permit(:name, :category, :description, :image)
+      params.require(:design).permit(:name, :category, :category_id, :description, :image)
+    end
+
+    def prepare_categories
+      @categories = Category.all
     end
 end

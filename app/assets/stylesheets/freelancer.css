@@ -555,3 +555,8 @@ line-height: 1.428571429;
 color: #777777;
 background-color: white;
 }
+
+.navbar-right .dropdown-menu {
+right: auto;
+left: 0;
+}

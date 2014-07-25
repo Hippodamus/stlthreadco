@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :categories
+
   devise_for :users
   resources :designs
 
@@ -7,6 +9,8 @@ Rails.application.routes.draw do
   get "edit" => "designs#edit"
   get "new" => "designs#new"
   get "show" => "designs#show"
+
+  
 
 
   # The priority is based upon order of creation: first created -> highest priority.

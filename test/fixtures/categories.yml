@@ -1,0 +1,17 @@
+baseball: 
+  name: Baseball
+
+football: 
+  name: Football
+
+hockey: 
+  name: Hockey
+
+collegesports: 
+  name: College Sports
+
+stlculture: 
+  name: STL Culture
+
+humor: 
+  name: Humor
