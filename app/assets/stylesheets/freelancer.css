@@ -569,3 +569,9 @@ left: 0;
     padding-left: 15px;
     float: left;
 }
+
+#footer {
+   position:fixed;
+   margin-bottom:0px;
+   width:100%;
+}
