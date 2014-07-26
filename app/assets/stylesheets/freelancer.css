@@ -560,3 +560,7 @@ background-color: white;
 right: auto;
 left: 0;
 }
+
+.ul.list-inline {
+    width: 460px;
+}
