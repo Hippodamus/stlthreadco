@@ -564,3 +564,8 @@ left: 0;
 .ul.list-inline {
     width: 460px;
 }
+
+.actions {
+    padding-left: 15px;
+    float: left;
+}

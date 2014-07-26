@@ -7,20 +7,26 @@
     </ul>
   <% end %>
 
-  <div class="form-group col-xs-12 floating-label-form-group">
-    <%= f.label :name %><br/>
-    <%= f.text_field :name, class: "form-control", placeholder: 'Name' %>
-  </div>
-  <div class="form-group col-xs-12 floating-label-form-group">
-    <%= f.label :email %><br/>
-    <%= f.text_field :email, class: "form-control", placeholder: 'Email' %>
-  </div>
-  <div class="form-group col-xs-12 floating-label-form-group">
-    <%= f.label :message %><br/>
-    <%= f.text_area :message, class: "form-control", placeholder: 'A short message' %>
-  </div>
-  <div class="row"></div>
-  <div class="actions">
-    <%= f.submit "Send", class: "btn btn-primary" %>
-  </div>
+</center>
+    <form role="form">
+      <div class="form-group col-xs-8 floating-label-form-group">
+        <%= f.label :name %><br/>
+        <%= f.text_field :name, class: "form-control", placeholder: 'Name' %>
+      </div>
+      <div class="form-group col-xs-8 floating-label-form-group">
+        <%= f.label :email %><br/>
+        <%= f.text_field :email, class: "form-control", placeholder: 'Email' %>
+      </div>
+      <div class="form-group col-xs-8 floating-label-form-group">
+        <%= f.label :message %><br/>
+        <%= f.text_area :message, class: "form-control", placeholder: 'A short message' %>
+      </div>
+      <div class="row"></div>
+      <div class="actions">
+        <br>
+        <%= f.submit "Send", class: "btn btn-primary" %>
+      </div>
+    </form>
+</center>
+
 <% end %>
