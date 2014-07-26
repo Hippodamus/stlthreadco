@@ -38,8 +38,18 @@ gem "paperclip-dropbox", ">= 1.1.7"
 
 gem "figaro"
 
+gem 'mail_form'
+
+gem 'simple_form'
+
+gem 'pony'
+
 group :development, :test do
 	gem 'sqlite3'
+end
+
+group :development, :test do
+  gem 'foreman'
 end
 
 group :production do

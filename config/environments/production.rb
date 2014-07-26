@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -81,5 +82,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Required for Devise. Remember to change localhost:3000 to actual application host
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'stlthreadco.herokuapp.com' }
+
+  config.action_mailer.delivery_method = :smtp 
 end

@@ -20,3 +20,6 @@
 
 #ignore files uploaded on localhost
 /public/system
+
+.env
+Procfile

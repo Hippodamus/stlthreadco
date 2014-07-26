@@ -49,11 +49,6 @@
         image: '../video/images/fitness-video3-big.jpg',
         title: 'Greatest Show on Turf'
         },{
-
-        file: 'https://www.youtube.com/watch?v=9Q_AI3DThRY',
-        image: '../video/images/fitness-video3-big.jpg',
-        title: 'Kurt Warner Last Hero'
-        },{
             
         file: 'https://www.youtube.com/watch?v=cqbgt625HNY',
         image: '../video/images/fitness-video3-big.jpg',
@@ -183,38 +178,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Get in Touch</h2>
+                    <h2>Get in touch with us</h2>
                     <br><br>
+                    <div class="col-lg-4 col-lg-offset-2">
+                    <p>Have an incredible design idea?  Send it our way!  We built this comapny for you, and want to produce apparel YOU want to wear.</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="name">Name</label>
-                                <input class="form-control" type="text" name="name" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="email">Email Address</label>
-                                <input class="form-control" type="email" name="email" placeholder="Email Address">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="message">Message</label>
-                                <textarea placeholder="Message" class="form-control" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-primary">Send</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                    <div class="col-lg-4"></div>
+                      <%= render :partial => "inquiries/form", :locals => {:inquiry => Inquiry.new} %>
+                    
                 </div>
             </div>
         </div>

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Design < ActiveRecord::Base
 	if Rails.env.development?
 			has_attached_file :image, :styles => { :medium => "510x>", :thumb => "100x100>" }, :default_url => "/missing.png"

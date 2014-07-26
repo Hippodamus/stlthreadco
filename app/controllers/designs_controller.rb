@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class DesignsController < ApplicationController
   before_action :set_design, only: [:show, :edit, :update, :destroy]
 
