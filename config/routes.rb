@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :designs
 
   root "pages#home"
+  get "designchallenge" => "pages#designchallenge"
   get "designs" => "designs#index"
   get "edit" => "designs#edit"
   get "new" => "designs#new"
